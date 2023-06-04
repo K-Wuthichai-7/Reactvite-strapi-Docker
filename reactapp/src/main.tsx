@@ -13,6 +13,8 @@ import theme from './config/theme'
 import App from './App.tsx'
 import './index.css'
 
+
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ProSidebarProvider>
@@ -20,5 +22,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <App />
       </ThemeProvider>
     </ProSidebarProvider>
+
+
   </React.StrictMode>,
 )

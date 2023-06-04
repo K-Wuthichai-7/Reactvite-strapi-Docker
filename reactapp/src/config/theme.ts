@@ -1,5 +1,5 @@
-import { createTheme } from "@mui/material"
-import { green, grey, indigo } from "@mui/material/colors"
+import { createTheme } from '@mui/material/styles'
+import { green, grey, indigo } from '@mui/material/colors'
 
 // Create a theme instance.
 let theme = createTheme()
