@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 # Network
 networks:
@@ -8,17 +8,16 @@ networks:
 
 # Services
 services:
-
   # React App Development
   react_dev:
-    build: 
+    build:
       context: ./reactapp
       dockerfile: Dockerfile.dev
     container_name: reactmui_dev
     restart: always
     volumes:
       - ./reactapp:/usr/app
-      - /usr/app/node_modules  # Bookmarks Volume
+      - /usr/app/node_modules # Bookmarks Volume
     ports:
       - 5173:5173
     environment:
@@ -28,7 +27,7 @@ services:
 
   # React App Production
   react_prod:
-    build: 
+    build:
       context: ./reactapp
       dockerfile: Dockerfile.prod
     container_name: reactmui_prod
