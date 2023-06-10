@@ -32,7 +32,7 @@ function App() {
   // )
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"/"}>
       <Routes>
         <Route element={<AuthLayout />}>
           <Route path="/" element={<Login />} />
